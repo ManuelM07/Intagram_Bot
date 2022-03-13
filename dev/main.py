@@ -76,9 +76,10 @@ class InstaFollower:
         time.sleep(10+self.sleep())
 
 
+
     def find_followers(self):
         """Esta función nos permite buscar las cuentas que deseamos seguir"""
-        for _ in range(8+self.sleep()):
+        while True: #for _ in range(8+self.sleep()): #TODO # se cambia por while para que mueva el scroll la cantidad de veces que sea
             if self.count == 40:
                 break 
             self.follow()
